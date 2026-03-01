@@ -1,28 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Dharmik Barot | Portfolio</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dharmik Barot - Android Developer & Content Creator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<p>Projects: <a href="https://github.com/dharmik1309-hub/PHP-Project">PHP Project</a>
-<h1>Hello, I'm Dharmik 👋</h1>
-<p>BCA Student | Web Developer</p>
+<body class="bg-gradient-to-br from-gray-900 to-black text-white">
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full bg-black/80 backdrop-blur-md z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Dharmik Barot</h1>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="hover:text-blue-400">Home</a></li>
+                <li><a href="#about" class="hover:text-blue-400">About</a></li>
+                <li><a href="#skills" class="hover:text-blue-400">Skills</a></li>
+                <li><a href="#projects" class="hover:text-blue-400">Projects</a></li>
+                <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-<section>
-  <h2>Projects</h2>
-  <ul>
-    <li>Hotel Booking Website</li>
-    <li>CRUD Admin Panel (PHP)</li>
-  </ul>
-</section>
+    <!-- Home -->
+    <section id="home" class="min-h-screen flex items-center justify-center text-center pt-20">
+        <div class="max-w-4xl mx-auto px-4">
+            <img src="https://via.placeholder.com/150?text=DP" alt="Profile" class="w-32 h-32 rounded-full mx-auto mb-6 shadow-2xl">
+            <h2 class="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Dharmik Barot</h2>
+            <p class="text-xl md:text-2xl mb-8 text-gray-300">BCA Student | Android Developer (Kotlin) | AI/ML Enthusiast | Video Editor (DaVinci Resolve)</p>
+            <a href="#projects" class="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-full text-lg font-semibold transition-all">View Projects</a>
+        </div>
+    </section>
 
-<section>
-  <h2>Contact</h2>
-  <p>Email: yourmail@gmail.com</p>
-</section>
+    <!-- About -->
+    <section id="about" class="py-20 bg-gray-900/50">
+        <div class="max-w-4xl mx-auto px-4">
+            <h3 class="text-4xl font-bold text-center mb-12">About Me</h3>
+            <p class="text-lg text-gray-300 mb-8 text-center max-w-2xl mx-auto">Tech-savvy BCA 3rd year student from Vadodara, Gujarat, passionate about Android app development with Kotlin, AI/ML, and content creation. GPA 9.6, preparing for CMAT, and skilled in video editing with DaVinci Resolve for social media reels.</p>
+            <div class="grid md:grid-cols-2 gap-8 text-center">
+                <div><h4 class="text-2xl font-bold mb-2">Education</h4><p>Bachelor of Computer Applications, Vadodara</p></div>
+                <div><h4 class="text-2xl font-bold mb-2">Hobbies</h4><p>Gaming (Valorant, BGMI), YouTube tutorials</p></div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Skills -->
+    <section id="skills" class="py-20">
+        <div class="max-w-4xl mx-auto px-4">
+            <h3 class="text-4xl font-bold text-center mb-12">Skills</h3>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-gray-800 p-6 rounded-xl hover:scale-105 transition-transform">
+                    <h4 class="text-2xl font-bold mb-4">Languages</h4>
+                    <ul class="space-y-2">
+                        <li>Kotlin, Java, Python, C#</li>
+                        <li>Embedded C</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-xl hover:scale-105 transition-transform">
+                    <h4 class="text-2xl font-bold mb-4">Tools</h4>
+                    <ul class="space-y-2">
+                        <li>Android Studio</li>
+                        <li>DaVinci Resolve</li>
+                        <li>Visual Studio</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-xl hover:scale-105 transition-transform">
+                    <h4 class="text-2xl font-bold mb-4">Interests</h4>
+                    <ul class="space-y-2">
+                        <li>AI/ML Roadmap</li>
+                        <li>Backend Dev</li>
+                        <li>CMAT Prep</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-20 bg-gray-900/50">
+        <div class="max-w-4xl mx-auto px-4">
+            <h3 class="text-4xl font-bold text-center mb-12">Projects</h3>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gray-800 p-6 rounded-xl hover:scale-105 transition-transform">
+                    <h4 class="text-xl font-bold mb-2">Android IoT App</h4>
+                    <p>Kotlin-based app integrating IoT devices with modern UI.</p>
+                    <a href="#" class="text-blue-400 mt-4 block">View on GitHub</a>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-xl hover:scale-105 transition-transform">
+                    <h4 class="text-xl font-bold mb-2">Video Editor Reels</h4>
+                    <p>Content creation workflow using DaVinci Resolve for Instagram.</p>
+                    <a href="#" class="text-blue-400 mt-4 block">Watch Demos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-20">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h3 class="text-4xl font-bold mb-12">Get In Touch</h3>
+            <p class="text-lg text-gray-300 mb-8">Open to internships in Android dev or AI/ML. Let's connect!</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="mailto:your.email@example.com" class="bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-full">Email</a>
+                <a href="https://github.com/dharmik13" class="bg-gray-700 hover:bg-gray-600 px-6 py-3 rounded-full">GitHub</a>
+                <a href="https://linkedin.com/in/dharmik13" class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-full">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
