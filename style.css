@@ -1681,42 +1681,39 @@ button, a {
   font-weight: 900;
   box-shadow: 0 10px 28px rgba(15, 23, 42, 0.06);
 }
-
 .hire-quick-stats {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 8px; /* Reduced gap slightly to gain horizontal space */
   margin-bottom: 18px;
   width: 100%;
 }
 
 .hire-quick-stats div {
-  min-width: 0;
-  padding: 13px 10px;
+  padding: 12px 4px; /* Reduced side padding to give text room */
   border-radius: 18px;
   background: rgba(255, 255, 255, 0.74);
   border: 1px solid rgba(148, 163, 184, 0.22);
   text-align: center;
-  overflow: hidden;
 } 
+
 .hire-quick-stats strong {
   display: block;
   color: #0f172a;
-  font-size: clamp(13px, 1vw, 15px);
+  font-size: 13px; /* Slightly smaller to fit "Full Stack" */
   font-weight: 950;
-  line-height: 1.15;
-  word-break: normal;
+  line-height: 1.1;
+  word-break: break-word; /* Allows long words to break if they hit the edge */
 }
 
 .hire-quick-stats small {
   display: block;
-  margin-top: 5px;
+  margin-top: 3px;
   color: #64748b;
-  font-size: 11px;
+  font-size: 10px; /* Reduced to balance with the strong tag */
   font-weight: 750;
-  line-height: 1.2;
+  line-height: 1.1;
 }
-
 .hire-actions {
   display: flex;
   flex-wrap: wrap;
